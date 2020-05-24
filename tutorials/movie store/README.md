@@ -1,4 +1,4 @@
-# Redbox Movie Store (Satire)
+# Deadbox Movie Store (Satire)
 
 <img src="https://honeycomb-marketplace.azurewebsites.net/images/redbox-demo-multi-device-mock.png">
 
