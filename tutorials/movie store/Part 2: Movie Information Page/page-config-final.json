@@ -1,0 +1,706 @@
+{
+    "Layout": {
+        "View": {
+            "Name": "ma-provider-mobx",
+            "Path": "http://localhost:3001/marketplace/ma-provider-mobx/ma-provider-mobx.0.0.0-beta.4/ma-provider-mobx.0.0.0-beta.4.js"
+        },
+        "Attributes": {
+            "display": "flex",
+            "flex": "1 1 auto",
+            "flexDirection": "column",
+            "padding": "0px 0px 0px 0px",
+            "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif"
+        },
+        "Content": {
+            "Name": "body",
+            "View": {
+                "Name": "ma-flex-layout",
+                "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+            },
+            "Container": {
+                "padding": "0px",
+                "display": "flex",
+                "flex": "1 1 100%"
+            },
+            "Attributes": {
+                "display": "flex",
+                "flex": "1 1 auto",
+                "flexDirection": "column",
+                "backgroundColor": "rgb(47, 30, 54)"
+            },
+            "LoadHandler": {
+                "ID": "5eb83a11140f43c5581737d4",
+                "Type": "rest",
+                "ReturnBinding": "MIPStore/SelectedTitle",
+                "Parameters": [
+                    {
+                        "Name": "type",
+                        "DefaultValue": "movie",
+                        "Type": "query"
+                    },
+                    {
+                        "Name": "i",
+                        "ValueBinding": "appStore/match/params/id",
+                        "Type": "query"
+                    },
+                    {
+                        "Name": "apikey",
+                        "DefaultValue": "${apikey}",
+                        "Type": "query"
+                    }
+                ],
+                "SuccessHandler": {
+                    "ID": "5ec3e7a63e41516ddbbacbc9",
+                    "Type": "rest",
+                    "ReturnBinding": "MIPStore/RelatedTitles",
+                    "Parameters": [
+                        {
+                            "Name": "type",
+                            "DefaultValue": "movie",
+                            "Type": "query"
+                        },
+                        {
+                            "Name": "s",
+                            "ValueBinding": "MIPStore/SelectedTitle/Title",
+                            "Type": "query"
+                        },
+                        {
+                            "Name": "apikey",
+                            "DefaultValue": "${apikey}",
+                            "Type": "query"
+                        }
+                    ]
+                }
+            },
+            "Children": [
+                {
+                    "Name": "center-header",
+                    "View": {
+                        "Name": "ma-flex-layout",
+                        "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                    },
+                    "Container": {
+                        "display": "flex",
+                        "width": "100%",
+                        "boxSizing": "border-box",
+                        "backgroundColor": "#ffffff",
+                        "justifyContent": "center"
+                    },
+                    "Attributes": {
+                        "display": "flex",
+                        "flex": "1 1 auto",
+                        "flexDirection": "row",
+                        "maxWidth": "1000px"
+                    },
+                    "Children": [
+                        {
+                            "Name": "header",
+                            "View": {
+                                "Name": "ma-flex-layout",
+                                "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                            },
+                            "Container": {
+                                "display": "flex",
+                                "width": "100%",
+                                "boxSizing": "border-box",
+                                "backgroundColor": "#ffffff",
+                                "justifyContent": "center"
+                            },
+                            "Attributes": {
+                                "display": "flex",
+                                "flex": "1 1 auto",
+                                "flexDirection": "row",
+                                "maxWidth": "1000px"
+                            },
+                            "Children": [
+                                {
+                                    "View": {
+                                        "Name": "ma-image",
+                                        "Path": "http://localhost:3001/marketplace/ma-image/ma-image.0.0.0-beta.28/ma-image.0.0.0-beta.28.js"
+                                    },
+                                    "Container": {
+                                        "display": "flex",
+                                        "flex": "1 1 100%",
+                                        "padding": "20px"
+                                    },
+                                    "Attributes": {
+                                        "display": "flex",
+                                        "alignSelf": "center",
+                                        "maxWidth": "300px",
+                                        "width": "100%"
+                                    },
+                                    "DefaultSource": "https://honeycomb-marketplace.azurewebsites.net/demos/deadbox/images/deadbox-logo.png",
+                                    "Alt": "deadbox logo"
+                                },
+                                {
+                                    "View": {
+                                        "Name": "ma-flex-layout",
+                                        "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                                    },
+                                    "Container": {
+                                        "display": "flex",
+                                        "flex": "1 1 100%",
+                                        "boxSizing": "border-box"
+                                    },
+                                    "Attributes": {
+                                        "display": "flex",
+                                        "alignItems": "center"
+                                    },
+                                    "Children": [
+                                        {
+                                            "View": {
+                                                "Name": "ma-text-box",
+                                                "Path": "http://localhost:3001/marketplace/ma-text-box/ma-text-box.0.0.0-beta.25/ma-text-box.0.0.0-beta.25.js"
+                                            },
+                                            "Container": {
+                                                "display": "flex",
+                                                "flex": "1 1 100%",
+                                                "align-items": "center"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "outline": "none",
+                                                "boxSizing": "border-box",
+                                                "padding": "0px 10px",
+                                                "height": "30px",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "borderRadius": "5px 0px 0px 5px",
+                                                "border": "1px solid #ccc",
+                                                "borderRight": "none"
+                                            },
+                                            "Placeholder": "Search movie titles...",
+                                            "TextBinding": "MovieFilter"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-button",
+                                                "Path": "http://localhost:3001/marketplace/ma-button/ma-button.0.0.0-beta.30/ma-button.0.0.0-beta.30.js"
+                                            },
+                                            "Container": {
+                                                "display": "flex",
+                                                "flex": "1 1 100%",
+                                                "height": "30px",
+                                                "borderRadius": "0px 5px 5px 0px",
+                                                "border": "1px #ccc solid",
+                                                "borderLeft": "none",
+                                                "boxSizing": "border-box",
+                                                "padding": "5px"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "alignSelf": "center",
+                                                "maxWidth": "300px",
+                                                "outline": "none",
+                                                "width": "100%"
+                                            },
+                                            "ClickHandler": {
+                                                "ID": "5ec3e7a63e41516ddbbacbc9",
+                                                "Type": "rest",
+                                                "ReturnBinding": "MovieSearch",
+                                                "Parameters": [
+                                                    {
+                                                        "Name": "type",
+                                                        "DefaultValue": "movie",
+                                                        "Type": "query"
+                                                    },
+                                                    {
+                                                        "Name": "s",
+                                                        "ValueBinding": "MovieFilter",
+                                                        "Type": "query"
+                                                    },
+                                                    {
+                                                        "Name": "apikey",
+                                                        "DefaultValue": "${apikey}",
+                                                        "Type": "query"
+                                                    }
+                                                ]
+                                            },
+                                            "DefaultText": "button",
+                                            "ImgSrc": "https://honeycomb-marketplace.azurewebsites.net/demos/deadbox/images/search_sm.png"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "center-body",
+                    "View": {
+                        "Name": "ma-flex-layout",
+                        "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                    },
+                    "Container": {
+                        "display": "flex",
+                        "justifyContent": "center"
+                    },
+                    "Attributes": {
+                        "display": "flex",
+                        "flex": "1 1 auto",
+                        "flexDirection": "column",
+                        "maxWidth": "1000px"
+                    },
+                    "Children": [
+                        {
+                            "Name": "content",
+                            "View": {
+                                "Name": "ma-flex-layout",
+                                "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                            },
+                            "Container": {
+                                "display": "flex"
+                            },
+                            "Attributes": {
+                                "display": "flex",
+                                "flex": "1 1 auto",
+                                "flexDirection": "row",
+                                "backgroundColor": "rgb(47, 30, 54)",
+                                "padding": "20px"
+                            },
+                            "Children": [
+                                {
+                                    "Name": "content",
+                                    "View": {
+                                        "Name": "ma-flex-layout",
+                                        "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                                    },
+                                    "Children": [
+                                        {
+                                            "View": {
+                                                "Name": "ma-image",
+                                                "Path": "http://localhost:3001/marketplace/ma-image/ma-image.0.0.0-beta.28/ma-image.0.0.0-beta.28.js"
+                                            },
+                                            "Container": {
+                                                "marginRight": "20px"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "alignSelf": "center",
+                                                "maxWidth": "300px",
+                                                "height": "100%",
+                                                "border": "1px solid #ccc",
+                                                "borderRadius": "10px"
+                                            },
+                                            "SourceBinding": "rootStore/MIPStore/SelectedTitle/Poster",
+                                            "Alt": "movie poster"
+                                        },
+                                        {
+                                            "Name": "content",
+                                            "View": {
+                                                "Name": "ma-flex-layout",
+                                                "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "flexDirection": "row",
+                                                "justifyContent": "center",
+                                                "marginRight": "20px"
+                                            },
+                                            "Children": [
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex",
+                                                        "marginTop": "10px"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff",
+                                                        "marginRight": "3px"
+                                                    },
+                                                    "DefaultValue": "Rated "
+                                                },
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex",
+                                                        "marginTop": "10px"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff"
+                                                    },
+                                                    "TextBinding": "MIPStore/SelectedTitle/imdbRating"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "View": {
+                                        "Name": "ma-flex-layout",
+                                        "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                                    },
+                                    "Container": {
+                                        "display": "flex"
+                                    },
+                                    "Attributes": {
+                                        "display": "flex",
+                                        "flex": "1 1 auto",
+                                        "flexDirection": "column",
+                                        "backgroundColor": "rgb(47, 30, 54)"
+                                    },
+                                    "Children": [
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "#fff",
+                                                "fontWeight": "bold",
+                                                "fontSize": "30px"
+                                            },
+                                            "TextBinding": "MIPStore/SelectedTitle/Title"
+                                        },
+                                        {
+                                            "Name": "content",
+                                            "View": {
+                                                "Name": "ma-flex-layout",
+                                                "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "flexDirection": "row"
+                                            },
+                                            "Children": [
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff",
+                                                        "marginRight": "3px"
+                                                    },
+                                                    "TextBinding": "MIPStore/SelectedTitle/Rated"
+                                                },
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff",
+                                                        "marginRight": "3px"
+                                                    },
+                                                    "DefaultValue": "|"
+                                                },
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff",
+                                                        "marginRight": "3px"
+                                                    },
+                                                    "TextBinding": "MIPStore/SelectedTitle/Year"
+                                                },
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff",
+                                                        "marginRight": "3px"
+                                                    },
+                                                    "DefaultValue": "|"
+                                                },
+                                                {
+                                                    "View": {
+                                                        "Name": "ma-label",
+                                                        "Version": "0.0.0-beta.27"
+                                                    },
+                                                    "Container": {
+                                                        "display": "flex"
+                                                    },
+                                                    "Attributes": {
+                                                        "display": "flex",
+                                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                        "color": "#fff",
+                                                        "marginRight": "3px"
+                                                    },
+                                                    "TextBinding": "MIPStore/SelectedTitle/Runtime"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "#fff",
+                                                "fontWeight": "bold",
+                                                "marginTop": "20px"
+                                            },
+                                            "DefaultValue": "Summary"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "rgb(204, 204, 204)",
+                                                "fontSize": "14px"
+                                            },
+                                            "TextBinding": "MIPStore/SelectedTitle/Plot"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "#fff",
+                                                "fontWeight": "bold",
+                                                "marginTop": "20px"
+                                            },
+                                            "DefaultValue": "Genre"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "rgb(204, 204, 204)",
+                                                "fontSize": "14px"
+                                            },
+                                            "TextBinding": "MIPStore/SelectedTitle/Genre"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "#fff",
+                                                "fontWeight": "bold",
+                                                "marginTop": "20px"
+                                            },
+                                            "DefaultValue": "Actors"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "rgb(204, 204, 204)",
+                                                "fontSize": "14px"
+                                            },
+                                            "TextBinding": "MIPStore/SelectedTitle/Actors"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "#fff",
+                                                "fontWeight": "bold",
+                                                "marginTop": "20px"
+                                            },
+                                            "DefaultValue": "Directors"
+                                        },
+                                        {
+                                            "View": {
+                                                "Name": "ma-label",
+                                                "Version": "0.0.0-beta.27"
+                                            },
+                                            "Container": {
+                                                "display": "flex"
+                                            },
+                                            "Attributes": {
+                                                "display": "flex",
+                                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                                "color": "rgb(204, 204, 204)",
+                                                "fontSize": "14px"
+                                            },
+                                            "TextBinding": "MIPStore/SelectedTitle/Director"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Name": "related-header",
+                            "View": {
+                                "Name": "ma-flex-layout",
+                                "Path": "http://localhost:3001/marketplace/ma-flex-layout/ma-flex-layout.0.0.0-beta.29/ma-flex-layout.0.0.0-beta.29.js"
+                            },
+                            "Container": {
+                                "padding": "0px 20px 0px 20px"
+                            },
+                            "Attributes": {
+                                "display": "flex",
+                                "flexDirection": "row",
+                                "borderBottom": "1px solid #ccc",
+                                "fontSize": "22px"
+                            },
+                            "Children": [
+                                {
+                                    "View": {
+                                        "Name": "ma-label",
+                                        "Version": "0.0.0-beta.27"
+                                    },
+                                    "Container": {
+                                        "display": "flex",
+                                        "marginTop": "10px"
+                                    },
+                                    "Attributes": {
+                                        "display": "flex",
+                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                        "color": "#fff",
+                                        "marginRight": "3px"
+                                    },
+                                    "DefaultValue": "Titles related to:"
+                                },
+                                {
+                                    "View": {
+                                        "Name": "ma-label",
+                                        "Version": "0.0.0-beta.27"
+                                    },
+                                    "Container": {
+                                        "display": "flex",
+                                        "marginTop": "10px"
+                                    },
+                                    "Attributes": {
+                                        "display": "flex",
+                                        "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                        "color": "#fff"
+                                    },
+                                    "TextBinding": "MIPStore/SelectedTitle/Title"
+                                }
+                            ]
+                        },
+                        {
+                            "View": {
+                                "Name": "ma-items-control",
+                                "Version": "0.0.0-beta.1"
+                            },
+                            "Container": {
+                                "display": "flex"
+                            },
+                            "Attributes": {
+                                "display": "flex",
+                                "flexWrap": "wrap",
+                                "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif",
+                                "color": "rgb(204, 204, 204)",
+                                "fontSize": "14px",
+                                "padding": "10px"
+                            },
+                            "ItemsBinding": "MIPStore/RelatedTitles/Search",
+                            "ItemTemplate": {
+                                "View": {
+                                    "Name": "ma-image",
+                                    "Path": "http://localhost:3001/marketplace/ma-image/ma-image.0.0.0-beta.28/ma-image.0.0.0-beta.28.js"
+                                },
+                                "Container": {
+                                    "display": "flex",
+                                    "border": "1px solid #ccc",
+                                    "borderRadius": "10px",
+                                    "margin": "10px",
+                                    "height": "330px",
+                                    "maxHeight": "330px",
+                                    "width": "225px",
+                                    "maxWidth": "225px",
+                                    "boxSizing": "border-box",
+                                    "overflow": "hidden"
+                                },
+                                "Attributes": {
+                                    "width": "100%"
+                                },
+                                "ClickHandler": {
+                                    "Type": "hist",
+                                    "Url": "/eschall/deadbox/movie/:id",
+                                    "Parameters": [
+                                        {
+                                            "Name": "id",
+                                            "ValueBinding": "localStore/imdbID",
+                                            "Type": "route"
+                                        }
+                                    ]
+                                },
+                                "SourceBinding": "localStore/Poster",
+                                "Alt": "movie poster"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
