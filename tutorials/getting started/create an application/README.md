@@ -40,4 +40,8 @@ Clicking the new button in the previous step will open the application editor so
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-2.png">
 
+#### Step 4: Add a page to your Honeycomb Application
+After clicking the create button in the previous step, your new application is displayed within the studio admin screen. From here we will need to add our first page to the application. Select the Pages tab and click the create button.
 
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-3.png">
