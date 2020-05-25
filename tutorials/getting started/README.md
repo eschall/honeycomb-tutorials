@@ -1,7 +1,3 @@
-# Getting Started Tutorials: Creating your first web application
-
-<img src="https://honeycomb-marketplace.azurewebsites.net/demos/deadbox/images/deadbox-pt1-final.png">
-
 # Honeycomb for Beginners: Getting Started
 
 ### Tutorials
@@ -9,6 +5,8 @@
 * [Part 1: Creating your first Honeycomb Web Application](https://github.com/Schalltech/honeycomb-tutorials/blob/master/tutorials/getting%20started/README.md#honeycomb-for-beginners-getting-started)
 
 ## Part 1: How to create your first Honeycomb web application
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-11.png">
 
 In the following tutorial you'll learn:
 
