@@ -14,6 +14,7 @@ In the following tutorial you'll learn:
 * how to add a page to your Honeycomb Web Application
 * how to add a micro app to a pages layout
 * how to style a micro apps container
+* how to configure a route to navigate to your page
 * how to access your Honeycomb Web Application on the cloud
 
 Micro apps you will use in this tutorial
@@ -114,3 +115,12 @@ After adding the snippet above, your configuration should look similar to the sn
 Once you have updated your configuration, click the commit changes button. Now you can select the preview tab and you should see your label centered in the middle of the page!
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.b.png">
+
+#### Step 6: Configure a route to navigate to your page
+Congratulations! At this point, you have successfully added a page to your application and configured its layout. There is still an issue of accessing the page and your application from a browser. In this step, we will add a route that will allow users to access your applications page from the browser.
+
+First, click the "HelloWorld" breadcrumb link in the top left corner of the studio to navigate back to the application admin screen. From the application admin screen, select the Routes tab. The routes tab allows you to manage all the routes your application supports to navigate between its pages. Click the "add route" link to add a new route.
+
+The page field of the route contains a list of all the pages configured for your application. Select the Home page for your route. The second field is the path the route will attempt to match to the url a user enters into the browser. When a user enters a url that matches a routes path, the specified page will be rendered in the browser. Enter "/:account/:appName" for the routes path. Routes are auto saved when making changes so you should see something similar to the snap below after entering the information.
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-7.png">
