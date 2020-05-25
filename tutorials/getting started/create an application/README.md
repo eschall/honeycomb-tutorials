@@ -23,9 +23,6 @@ Name | Description
 ma-label | The label micro app represents a caption for an item in a user interface.
 
 ### Create the Hello World Application
-Generating Micro-Apps is fast and easy through the use of the Honeycomb CLI. It takes care of all the boiler plate setup that allows your micro-app to play nicely with lerna and the mono-repo. To create a new micro-app, simply call the following command.
+Creating applications with micro apps is fast and easy when using Honeycomb Studio. To get started, log in to your Honeycomb Studio account. Click the Applications tab on your account page and click the New button.
 
-```
-yarn create:micro-app
-```
-This will launch the CLI in your terminal. You should see something similar as the screenshot below.
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-1.png">
