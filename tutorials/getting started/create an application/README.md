@@ -137,5 +137,5 @@ Your application should now be displayed within a new browser window! While host
 Thats it! You have successfully created your first basic Honeycomb Web Application!
 
 #### Tutorial Recap
-In this tutorial we covered how how to create a basic Honeycomb Application. We demonstrated how to add pages to an application, configure their layout with micro apps and provided basic styling. We then reviewed how to create routes to allow users to access the content from the browser and finally how to access the created application from the Honeycomb Cloud.
+In this tutorial we covered how to create a basic Honeycomb Application. We demonstrated how to add pages to an application, configure their layout with micro apps and provide basic styling. We then reviewed how to create routes to allow users to access the content from the browser and finally how to access the created application from the Honeycomb Cloud.
 
