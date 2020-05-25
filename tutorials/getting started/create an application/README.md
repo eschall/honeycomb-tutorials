@@ -1,6 +1,6 @@
 # Getting Started Tutorials: Creating your first application
 
-<img src="https://honeycomb-marketplace.azurewebsites.net/demos/deadbox/images/deadbox-pt1-final.png">
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-11.png">
 
 ## Contents
 
