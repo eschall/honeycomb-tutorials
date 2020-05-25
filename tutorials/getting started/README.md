@@ -6,7 +6,7 @@
 
 ### Tutorials
 
-* [Part 1: Creating your first Honeycomb Application](https://github.com/Schalltech/honeycomb/blob/master/__documentation__/tutorials/create-micro-app.md#honeycomb-for-beginners-getting-started-with-micro-apps)
+* [Part 1: Creating your first Honeycomb Application](https://github.com/Schalltech/honeycomb-tutorials/blob/master/tutorials/getting%20started/README.md#honeycomb-for-beginners-getting-started)
 
 ## Part 1: How to create your first Honeycomb application
 
