@@ -126,6 +126,13 @@ The page field of the route contains a list of all the pages configured for your
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-7.png">
 
 #### Step 7: Access your application on the Honeycomb Cloud
-Your almost there! All that is left is to access your application from the Honeycomb Cloud. Click your account link from the pages breadcrumb to return to your account profile. Select the Applications tab on your account page. This will show your new Hello World in the application list. To view your application on the cloud, click the launch button for your application in the list.
+Your almost there! All that is left is to access your application from the Honeycomb Cloud. Click your account link from the pages breadcrumb to return to your account profile. Select the Applications tab on your account page. This will show your new Hello World in the application list. To access your application on the cloud, click the applications launch button.
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-8.png">
+
+Your application should now be displayed within a new browser window! While hosted on the cloud, your application is accessible to anyoone that has the url to your application. Applications hosted on the cloud are available from the https://microapp.host/<your-account>/<application-name>.
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-11.png">
+
+Thats it! You have successfully created your first basic Honeycomb Web Application!
+
