@@ -130,9 +130,12 @@ Your almost there! All that is left is to access your application from the Honey
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-8.png">
 
-Your application should now be displayed within a new browser window! While hosted on the cloud, your application is accessible to anyoone that has the url to your application. Applications hosted on the cloud are available from the https://microapp.host/<your-account>/<application-name>.
+Your application should now be displayed within a new browser window! While hosted on the cloud, your application is accessible to anyoone that has the url to your application. Applications hosted on the cloud are available from the https://microapp.host/[your-account]/[application-name].
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-11.png">
 
 Thats it! You have successfully created your first basic Honeycomb Web Application!
+
+#### Tutorial Recap
+In this tutorial we covered how how to create a basic Honeycomb Application. We demonstrated how to add pages to an application, configure their layout with micro apps and provided basic styling. We then reviewed how to create routes to allow users to access the content from the browser and finally how to access the created application from the Honeycomb Cloud.
 
