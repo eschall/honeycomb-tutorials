@@ -26,11 +26,16 @@ ma-label | The label micro app represents a caption for an item in a user interf
 Creating applications with micro apps is fast and easy when using Honeycomb Studio. 
 
 #### Step 1: Login
-To get started, log in to your Honeycomb Studio account. Select the Applications tab on your account page and click the New button.
+To get started, log in to your Honeycomb Studio account. 
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-0.png">
+
+#### Step 2: Create the application
+Select the Applications tab on your account page and click the New button.
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-1.png">
 
-#### Step 2: Give your Honeycomb Application a name and description
+#### Step 3: Give your Honeycomb Application a name and description
 Clicking the new button in the previous step will open the application editor so you can give your application a name and description. Enter "Hello World" as the applications name and "My first honeycomb application!" for the description. After entering the information, click the create button.
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-2.png">
