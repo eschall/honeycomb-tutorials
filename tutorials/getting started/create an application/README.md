@@ -84,3 +84,8 @@ Above is a basic example of a  label micro apps configuration.
 Add the label configuration to the layout section of the pages configuration. Your page configuration should look similar to the snap below. After entering the information, click the commit changes button.
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.png">
+
+After commiting your changes, select the preview tab to review the layout you just configured.
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.a.png">
+
