@@ -64,18 +64,23 @@ Select the Configuration section and enter the following config.
     }
 }
 ````
-Adding the above configuration does not do much except define the container that all micro apps will be placed to generate the pages layout. To display the text "Hello World!" within the page, we need to add a label micro app to the pages layout. Update the configuration to contain the following:
+Adding the above configuration does not do much except define the container that all micro apps will be placed to generate the pages layout. To display the text "Hello World!" within the page, we need to add a label micro app to the pages layout. Lets take a quick look at the micro app configuration for a label.
 
 ````json
 {
-    "Layout": {
-        "View": {
-            "Name": "ma-label",
-            "Version": "0.0.0-beta.27"
-        },
-        "DefaultValue": "Hello World!"
-    }
+    "View": {
+        "Name": "ma-label",
+        "Version": "0.0.0-beta.27"
+    },
+    "DefaultValue": "Hello World!"
 }
 ````
+
+Above is a basic example of a  label micro apps configuration.
+
+* View - The view section of the configuration is standard for all micro apps. It identifies the type and version of a micro app within the page layout.
+* DefaultValue - This configuration property is used to define the text that will be displayed within the label.
+
+Add the label configuration to the layout section of the pages configuration. Your page configuration should look similar to the snap below. After entering the information, click the commit changes button.
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.png">
