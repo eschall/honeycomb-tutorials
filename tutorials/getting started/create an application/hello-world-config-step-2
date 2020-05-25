@@ -1,0 +1,19 @@
+{
+    "Layout": {
+        "View": {
+            "Name": "ma-label",
+            "Version": "0.0.0-beta.27"
+        },
+        "Container": {
+            "display": "flex",
+            "flex": "1 1 100%",
+            "alignItems": "center",
+            "justifyContent": "center"
+        },
+        "Attributes": {
+            "display": "flex",
+            "fontFamily": "helvetica-neue-bold,Helvetica Neue,Helvetica,Arial,sans-serif"
+        },
+        "DefaultValue": "Hello World!"
+    }
+}
