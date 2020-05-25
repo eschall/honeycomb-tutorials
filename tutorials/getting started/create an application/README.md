@@ -13,7 +13,7 @@ In the following tutorial you'll learn:
 * how to create a basic Honeycomb Web Application
 * how to add a page to your Honeycomb Web Application
 * how to add a micro app to a pages layout
-* how to style a micro app and its container
+* how to style a micro apps container
 * how to access your Honeycomb Web Application on the cloud
 
 Micro apps you will use in this tutorial
@@ -89,3 +89,20 @@ After commiting your changes, select the preview tab to review the layout you ju
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.a.png">
 
+Success! If everything was configured correctly, you should now see "Hello World!" displayed within the top left corner of the page.
+
+#### Step 6: Styling a micro apps container
+So far, we have managed to add a label micro app to the configuration and display the text "Hello World!" within the page. Lets do some basic styling to show the label centered within the page instead of displaying it in the top left corner.
+
+To display the label in the center of the screen, we need to add the below section to the micro apps configuration.
+
+````json
+"Container": {
+    "display": "flex",
+    "flex": "1 1 100%",
+    "alignItems": "center",
+    "justifyContent": "center"
+},
+````
+
+Styles defined within the container property will be applied to the container surrounding the micro app. Any valid css value can be specified as log as it is enter in camel case (ex: alignItems vs align-items). 
