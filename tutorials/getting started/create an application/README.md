@@ -106,3 +106,7 @@ To display the label in the center of the screen, we need to add the below secti
 ````
 
 Styles defined within the container property will be applied to the container surrounding the micro app. Any valid css value can be specified as log as it is enter in camel case (ex: alignItems vs align-items). 
+
+After adding the snippet above, your configuration should look similar to the snap below:
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.a.png">
