@@ -45,3 +45,37 @@ After clicking the create button in the previous step, your new application is d
 
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-3.png">
+
+#### Step 5: Name your new page and give it a description
+In this step, enter Home for the pages name and "Main landing page of the application." for the description. Click the create button after entering the information.
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-4.png">
+
+#### Step 6: Add a micro app to the page layout
+The new page is now displayed in the admin screen. To configure the page layout, select the "Layout" tab. The layout tab contains two sub tabs, Configuration and Preview. The configuration tab is used to edit the page layout. You can view the changes made to the layout in the Preview tab.
+
+For the purpose of this tutorial, we want to add a label to the layout and display the text "Hello World!" within the page. First we need to add the page layout snippet to the configuration. This section of the configuration is the same for all pages and is the root of a pages configuration.
+
+Select the Configuration section and enter the following config.
+
+````json
+{
+    "Layout": {
+    }
+}
+````
+Adding the above configuration does not do much except define the container that all micro apps will be placed to generate the pages layout. To display the text "Hello World!" within the page, we need to add a label micro app to the pages layout. Update the configuration to contain the following:
+
+````json
+{
+    "Layout": {
+        "View": {
+            "Name": "ma-label",
+            "Version": "0.0.0-beta.27"
+        },
+        "DefaultValue": "Hello World!"
+    }
+}
+````
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.png">
