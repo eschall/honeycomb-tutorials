@@ -109,4 +109,4 @@ Styles defined within the container property will be applied to the container su
 
 After adding the snippet above, your configuration should look similar to the snap below:
 
-<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-6.a.png">
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-10.png">
