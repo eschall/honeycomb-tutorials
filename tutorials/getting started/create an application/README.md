@@ -124,3 +124,8 @@ First, click the "HelloWorld" breadcrumb link in the top left corner of the stud
 The page field of the route contains a list of all the pages configured for your application. Select the Home page for your route. The second field is the path the route will attempt to match to the url a user enters into the browser. When a user enters a url that matches a routes path, the specified page will be rendered in the browser. Enter "/:account/:appName" for the routes path. Routes are auto saved when making changes so you should see something similar to the snap below after entering the information.
 
 <img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-7.png">
+
+#### Step 7: Access your application on the Honeycomb Cloud
+Your almost there! All that is left is to access your application from the Honeycomb Cloud. Click your account link from the pages breadcrumb to return to your account profile. Select the Applications tab on your account page. This will show your new Hello World in the application list. To view your application on the cloud, click the launch button for your application in the list.
+
+<img src="https://raw.githubusercontent.com/Schalltech/honeycomb-tutorials/master/tutorials/getting%20started/create%20an%20application/images/create-app-8.png">
